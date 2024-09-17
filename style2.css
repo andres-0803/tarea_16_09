@@ -1,0 +1,67 @@
+.container{
+    background-color: grey;
+    padding: 10px;
+    text-align: center;
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3fr 2fr 7fr 3fr;
+    grid-template-areas:
+        "cabecera cabecera cabecera"
+        "menu menu menu"
+        "contenido contenido publi"
+        "pie pie pie"
+    ;
+}
+
+.container>div{
+    background-color: green;
+    
+}
+
+.container .cabecera{
+    background-color: orange;
+    grid-column: cabecera;
+
+}
+
+.container .menu{
+    background-color: pink;
+    grid-column: menu;
+
+}
+
+.container .contenido{
+    background-color: violet;
+    grid-column: contenido;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.container .contenido .contElem{
+    background-color: blueviolet;
+    margin: 5px;
+
+}
+
+.container .publi{
+    background-color: blue;
+    grid-column: publi;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.container .publi .contPubli{
+    background-color: olivedrab;
+    margin: 6px;
+}
+
+.container .pie{
+    background-color: red;
+    grid-column: pie;
+    color: white;
+}
